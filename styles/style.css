@@ -27,32 +27,38 @@ body {
 
 header {
     background-color: #000;
-    padding: 15px 20px;
+    padding: 25px 20px;
     border-bottom: 1px solid #444;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    transition: background-color 0.3s ease;
-}
-nav {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .logo {
-    height: 40px;
+    height: 100px; /* Tamaño grande del logo */
+    position: absolute;
+    left: 500px; /* Ajusta la posición para acercarlo */
+    top: 70%;
+    transform: translateY(-50%); /* Mantiene centrado verticalmente */
 }
+
+
 .menu {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
+
 .menu li {
     margin: 0 20px;
 }
+
 .menu li a {
     text-decoration: none;
     color: white;
@@ -61,10 +67,12 @@ nav {
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
 }
+
 .menu li a:hover {
     background-color: #444;
     transform: scale(1.1);
 }
+
 .hero {
     position: relative;
     width: 100%;
