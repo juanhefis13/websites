@@ -77,11 +77,14 @@ header {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url('../img/tinaja.jpg') center/cover no-repeat;
+    background: url('../img/fondo.jpeg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column; /* Hace que el contenido esté apilado verticalmente */
+    text-align: center; /* Alinea el texto al centro */
 }
+
 .hero::before {
     content: "";
     position: absolute;
@@ -92,29 +95,42 @@ header {
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
 }
+
 .hero-content {
     position: relative;
-    text-align: center;
     color: white;
     padding: 20px;
+    margin-bottom: 30px; /* Añadir espacio debajo del contenido */
 }
+
 .hero-content h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    font-weight: bold;
 }
+
 .hero-images {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Espacio entre las imágenes */
     margin-top: 20px;
     gap: 15px;
-    
+    width: 100%;
+    box-sizing: border-box;
+    align-items: stretch; /* Asegura que todos los elementos tengan la misma altura */
 }
+
 .hero-image-container {
     text-align: center;
     padding: 10px;
     border-radius: 8px;
-    width: 125px; /* Setting a fixed width for consistency */
+    flex: 1; /* Hace que todos los contenedores tengan el mismo tamaño */
+    max-width: 33%; /* Asegura que no ocupen más de un tercio del contenedor */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenido se distribuya uniformemente */
 }
+
 .hero-image-container h3 {
     margin-bottom: 10px;
     color: #fff;
@@ -124,39 +140,100 @@ header {
     padding: 8px 10px;
     border-radius: 5px;
     width: fit-content;
-    margin: 0 auto 10px; /* Centra el título */
+    margin: 0 auto 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 .hero-images img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Altura uniforme para las imágenes */
+    object-fit: cover; /* Asegura que las imágenes llenen el espacio sin distorsionarse */
     border-radius: 5px;
-    border: 3px solid #5dc1b9; /* Adding a border color */
+    border: 3px solid #5dc1b9;
 }
+
+
+
 
 
 .products {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    padding: 50px 20px; /* Añadimos padding superior para separar de la sección anterior */
+    background-color: #f4f4f4; /* Fondo claro para la sección de productos */
+    text-align: center;
 }
+
+.products h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
 .product {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    align-items: flex-start; /* Alinea en la parte superior */
+    justify-content: space-between; /* Espacio entre texto e imagen */
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
 }
-.product.reverse {
-    flex-direction: row-reverse;
+
+.product-features {
+    list-style-type: disc; /* Usa viñetas redondas */
+    padding-left: 20px; /* Da un margen a la izquierda para alinear con el título */
+    line-height: 1.8; /* Espaciado entre líneas */
 }
-.product img {
-    width: 200px;
-    height: auto;
-    margin: 10px;
-}
+
+
 .description {
-    max-width: 400px;
+    max-width: 50%;
+    text-align: left;
+    padding-right: 20px;
 }
+
+.description h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.description ul li {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+    padding-left: 20px;
+    position: relative;
+}
+
+.description ul li::before {
+    content: "✔"; /* Icono de check */
+    color: #5dc1b9;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.product img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
 footer {
     background-color: #333;
     color: white;
