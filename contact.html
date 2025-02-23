@@ -8,26 +8,83 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="img/icon128.png" alt="Company Logo" class="logo">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Nosotros</a></li>
-                <li><a href="services.html">Nuestros productos</a></li>
-                <li><a href="visitanos.html">Visitanos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="img/icon128.png" alt="Company Logo" class="logo">
+            </a>
+    
+            <!-- Botón de hamburguesa (visible solo en móviles/tablets) -->
+            <button class="menu-toggle" aria-label="Abrir menú">
+                ☰
+            </button>
+    
+            <!-- Menú de navegación -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="about.html">Nosotros</a></li>
+                    <li><a href="services.html">Nuestros productos</a></li>
+                    <li><a href="visitanos.html">Visítanos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <h1>Contact</h1>
-        <p>Contact information.</p>
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2 class="contact-title">Contáctanos</h2>
+                <div class="contact-content">
+                    <!-- Imágenes decorativas -->
+                    <div class="contact-images">
+                        <img src="img/tinaja.jpg" alt="Imagen de contacto 1" class="contact-image">
+                        <img src="img/sauna2.jpeg" alt="Imagen de contacto 2" class="contact-image">
+                        <img src="img/tinaja.jpeg" alt="Imagen de contacto 3" class="contact-image">
+                    </div>
+                    <!-- Información de contacto -->
+                    <div class="contact-info">
+                        <div class="contact-details">
+                            <h3>Horario de Atención</h3>
+                            <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                            <p>Sábados: 10:00 AM - 2:00 PM</p>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Nuestros Contactos</h3>
+                            <p><strong>Teléfono:</strong> +123 456 789</p>
+                            <p><strong>Correo:</strong> info@tudominio.com</p>
+                        </div>
+                        <div class="contact-social">
+                            <h3>Síguenos</h3>
+                            <div class="social-icons">
+                                <a href="https://wa.me/XXXXXXXXXXX" target="_blank">
+                                    <img src="img/wsp.png" alt="WhatsApp">
+                                </a>
+                                <a href="https://www.facebook.com/tupagina" target="_blank">
+                                    <img src="img/face.png" alt="Facebook">
+                                </a>
+                                <a href="https://www.instagram.com/tupagina" target="_blank">
+                                    <img src="img/ig.png" alt="Instagram">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Web Page Project. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/?locale=es_LA"><img src="img\face.png" alt="Facebook"></a>
+            <a href="#"><img src="img/twi.png" alt="Twitter"></a>
+            <a href="#"><img src="img/ig.png" alt="Instagram"></a>
+            <a href="#"><img src="img/wsp.png" alt="wsp"></a>
+        </div>
+        <p>123 Business Street, City, Country</p>
     </footer>
     <a href="https://wa.me/XXXXXXXXXXX" class="whatsapp-button" target="_blank">
         <img src="img/wsp.png" alt="WhatsApp">
     </a>
+    <script src="menu.js"></script>
 </body>
 </html>

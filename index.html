@@ -8,34 +8,43 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="img/icon128.png" alt="Company Logo" class="logo">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Nosotros</a></li>
-                <li><a href="services.html">Nuestros productos</a></li>
-                <li><a href="visitanos.html">Visitanos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="img/icon128.png" alt="Company Logo" class="logo">
+            </a>
+    
+            <!-- Botón de hamburguesa (visible solo en móviles/tablets) -->
+            <button class="menu-toggle" aria-label="Abrir menú">
+                ☰
+            </button>
+    
+            <!-- Menú de navegación -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="about.html">Nosotros</a></li>
+                    <li><a href="services.html">Nuestros productos</a></li>
+                    <li><a href="visitanos.html">Visítanos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    
     
     <section class="hero">
         <div class="hero-content">
-            <h1>Welcome to Our Website</h1>
-            <p>Your success starts here.</p>
+            <h1>Tinajas VIP</h1>
+            <p>Hacemos posible tus productos.</p>
             <div class="hero-images">
-                <div class="hero-image-container">
-                    <h3>Sauna</h3>
-                    <img src="img/sauna2.jpeg" alt="Image 1">
+                <div class="hero-image-container floating">
+                    <img src="img/sauna2.jpeg" alt="Sauna" class="hero-image">
                 </div>
-                <div class="hero-image-container">
-                    <h3>Tinajas</h3>
-                    <img src="img/tinaja.jpeg" alt="Image 2">
+                <div class="hero-image-container floating delay-1">
+                    <img src="img/tinaja.jpeg" alt="Tinaja de Madera" class="hero-image">
                 </div>
-                <div class="hero-image-container">
-                    <h3>Mantenimiento de piscinas</h3>
-                    <img src="img/piscina.jpeg" alt="Image 3">
+                <div class="hero-image-container floating delay-2">
+                    <img src="img/piscina.jpeg" alt="Piscina" class="hero-image">
                 </div>
             </div>
         </div>
@@ -44,26 +53,39 @@
     
     <section class="product">
         <div class="description">
-            <h3>Nuestros productos</h3>
-            <ul class="product-features">
-                <li>Bancas perimetrales</li>
-                <li>Escaleras de acceso</li>
-                <li>Porta vasos</li>
-                <li>Caldera de acero galvanizado</li>
-                <li>Reja protectora</li>
-                <li>Bomba de agua 1hp</li>
-                <li>3 Hidromasajes</li>
-                <li>Llave de reutilización de agua</li>
-                <li>Impregnado en su base de carbolineo</li>
-                <li>Tapa de tinaja</li>
-                <li>Pala para retirar cenizas</li>
-                <li>Luz LED de regalo</li>
-                <li>3 Meses de garantía</li>
-                <li>Tabla de picoteo de regalo</li>
-            </ul>
+            <h3>Presentación</h3>
+            <p>Disfruta del bienestar y la relajación que mereces. Nuestras soluciones están diseñadas para transformar tu espacio en un refugio de confort y armonía, donde cada momento se convierte en una experiencia de descanso y renovación. Sumérgete en la calidez de una tinaja, relájate con el vapor de un sauna o mantén tu piscina en perfectas condiciones para disfrutarla sin preocupaciones. Reduce el estrés, mejora la circulación, alivia la tensión muscular y potencia tu bienestar físico y mental. Encuentra la opción perfecta para desconectarte del día a día y revitalizar tu cuerpo y mente</p>
         </div>
         <img src="img/tinaja.jpeg" alt="Tinaja de Madera">
     </section>
+
+    <!-- Carrusel automático -->
+
+<section class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="img/sauna2.jpeg" alt="Sauna">
+        </div>
+        <div class="carousel-slide">
+            <img src="img/tinaja.jpeg" alt="Tinaja de Madera">
+        </div>
+        <div class="carousel-slide">
+            <img src="img/piscina.jpeg" alt="Piscina">
+        </div>
+        <div class="carousel-slide">
+            <img src="img/sauna2.jpeg" alt="Sauna">
+        </div>
+        <div class="carousel-slide">
+            <img src="img/tinaja.jpeg" alt="Tinaja de Madera">
+        </div>
+        <div class="carousel-slide">
+            <img src="img/piscina.jpeg" alt="Piscina">
+        </div>
+    </div>
+</section>
+    
+    
+    
         
     
     
@@ -74,12 +96,15 @@
             <a href="https://www.facebook.com/?locale=es_LA"><img src="img\face.png" alt="Facebook"></a>
             <a href="#"><img src="img/twi.png" alt="Twitter"></a>
             <a href="#"><img src="img/ig.png" alt="Instagram"></a>
-            <a href="#"><img src="img/wsp.png" alt="Instagram"></a>
+            <a href="#"><img src="img/wsp.png" alt="wsp"></a>
         </div>
         <p>123 Business Street, City, Country</p>
     </footer>
     <a href="https://wa.me/XXXXXXXXXXX" class="whatsapp-button" target="_blank">
         <img src="img/wsp.png" alt="WhatsApp">
     </a>
+    <script src="carousel.js"></script>
+
+    <script src="menu.js"></script>
 </body>
 </html>

@@ -1,33 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visitanos</title>
+    <title>Visítanos</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <img src="img/icon128.png" alt="Company Logo" class="logo">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Nosotros</a></li>
-                <li><a href="services.html">Nuestros productos</a></li>
-                <li><a href="visitanos.html">Visitanos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="img/icon128.png" alt="Company Logo" class="logo">
+            </a>
+    
+            <!-- Botón de hamburguesa (visible solo en móviles/tablets) -->
+            <button class="menu-toggle" aria-label="Abrir menú">
+                ☰
+            </button>
+    
+            <!-- Menú de navegación -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="about.html">Nosotros</a></li>
+                    <li><a href="services.html">Nuestros productos</a></li>
+                    <li><a href="visitanos.html">Visítanos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <h1>Visitanos</h1>
-        <p>Information about the company.</p>
+        <!-- Título principal -->
+        <h1 class="section-title">Nuestras Sucursales</h1>
+
+        <!-- Primera sucursal -->
+        <section class="sucursal">
+            <h2 class="sucursal-title">Sucursal Viña del Mar</h2>
+            <div class="sucursal-content">
+                <div class="sucursal-info">
+                    <p class="sucursal-description">
+                        Nuestra sucursal en Viña del Mar está ubicada en el centro de la ciudad, cerca del Falabella. 
+                        Ven y disfruta de nuestros productos en un lugar lleno de comodidad y estilo.
+                    </p>
+                </div>
+                <div class="sucursal-map">
+                    <iframe
+                        id="map-vina"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.073144044091!2d-71.5540006848126!3d-33.02449998090178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689dde1f8f7a8a5%3A0x6f5f5f5f5f5f5f5f!2sFalabella%20Vi%C3%B1a%20del%20Mar!5e0!3m2!1ses!2scl!4v1620912345678&markers=color:red%7C-33.0245,-71.5518"
+                        width="100%"
+                        height="300"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                    <div class="map-button-container">
+                        <a href="https://www.google.com/maps?q=-33.0245,-71.5518&markers=color:red%7C-33.0245,-71.5518" target="_blank" class="map-button">
+                            Ir a Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Segunda sucursal -->
+        <section class="sucursal">
+            <h2 class="sucursal-title">Sucursal La Calera</h2>
+            <div class="sucursal-content">
+                <div class="sucursal-info">
+                    <p class="sucursal-description">
+                        Nuestra sucursal en La Calera está ubicada cerca del Falabella, en un entorno cómodo y accesible. 
+                        Perfecta para disfrutar de nuestros productos en un lugar único.
+                    </p>
+                </div>
+                <div class="sucursal-map">
+                    <iframe
+                        id="map-calera"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.073144044091!2d-71.5540006848126!3d-33.02449998090178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689dde1f8f7a8a5%3A0x6f5f5f5f5f5f5f5f!2sFalabella%20Vi%C3%B1a%20del%20Mar!5e0!3m2!1ses!2scl!4v1620912345678&markers=color:red%7C-32.7825,-71.2097"
+                        width="100%"
+                        height="300"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                    <div class="map-button-container">
+                        <a href="https://www.google.com/maps?q=-32.7825,-71.2097&markers=color:red%7C-32.7825,-71.2097" target="_blank" class="map-button">
+                            Ir a Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Web Page Project. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/?locale=es_LA"><img src="img\face.png" alt="Facebook"></a>
+            <a href="#"><img src="img/twi.png" alt="Twitter"></a>
+            <a href="#"><img src="img/ig.png" alt="Instagram"></a>
+            <a href="#"><img src="img/wsp.png" alt="wsp"></a>
+        </div>
+        <p>123 Business Street, City, Country</p>
     </footer>
+
     <a href="https://wa.me/XXXXXXXXXXX" class="whatsapp-button" target="_blank">
         <img src="img/wsp.png" alt="WhatsApp">
     </a>
+    <script src="menu.js"></script>
 </body>
 </html>

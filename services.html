@@ -8,26 +8,106 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="img/icon128.png" alt="Company Logo" class="logo">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Nosotros</a></li>
-                <li><a href="services.html">Nuestros productos</a></li>
-                <li><a href="visitanos.html">Visitanos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="img/icon128.png" alt="Company Logo" class="logo">
+            </a>
+    
+            <!-- Botón de hamburguesa (visible solo en móviles/tablets) -->
+            <button class="menu-toggle" aria-label="Abrir menú">
+                ☰
+            </button>
+    
+            <!-- Menú de navegación -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="about.html">Nosotros</a></li>
+                    <li><a href="services.html">Nuestros productos</a></li>
+                    <li><a href="visitanos.html">Visítanos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <h1>Services</h1>
-        <p>Details about the services offered.</p>
-    </main>
+        <!-- Sección de Tinajas -->
+        <section class="product">
+            <div class="description">
+                <h3>Tinajas</h3>
+                <ul class="product-features">
+                    <li>Bancas perimetrales</li>
+                    <li>Escaleras de acceso</li>
+                    <li>Porta vasos</li>
+                    <li>Caldera de acero galvanizado</li>
+                    <li>Reja protectora</li>
+                    <li>Bomba de agua 1hp</li>
+                    <li>3 Hidromasajes</li>
+                    <li>Llave de reutilización de agua</li>
+                    <li>Impregnado en su base de carbolineo</li>
+                    <li>Tapa de tinaja</li>
+                    <li>Pala para retirar cenizas</li>
+                    <li>Luz LED de regalo</li>
+                    <li>3 Meses de garantía</li>
+                    <li>Tabla de picoteo de regalo</li>
+                </ul>
+            </div>
+            <img src="img/tinaja.jpeg" alt="Tinaja de Madera">
+        </section>
+    
+        <!-- Sección de Sauna -->
+        <section class="product">
+            <div class="description">
+                <h3>Sauna</h3>
+                <ul class="product-features">
+                    <li>Construcción en madera de alta calidad</li>
+                    <li>Capacidad para 4-6 personas</li>
+                    <li>Calefacción con estufa a leña o eléctrica</li>
+                    <li>Ventilación regulable</li>
+                    <li>Asientos ergonómicos</li>
+                    <li>Iluminación LED integrada</li>
+                    <li>Puerta de vidrio templado</li>
+                    <li>Control de temperatura digital</li>
+                    <li>Mantenimiento incluido por 6 meses</li>
+                    <li>Instalación profesional</li>
+                </ul>
+            </div>
+            <img src="img/sauna.jpg" alt="Sauna de Madera">
+        </section>
+    
+        <!-- Sección de Mantención de Piscinas -->
+        <section class="product">
+            <div class="description">
+                <h3>Mantención de Piscinas</h3>
+                <ul class="product-features">
+                    <li>Limpieza profunda semanal</li>
+                    <li>Control de pH y cloro</li>
+                    <li>Reparación de filtros y bombas</li>
+                    <li>Cambio de arena y mantos filtrantes</li>
+                    <li>Revisión de sistemas eléctricos</li>
+                    <li>Tratamiento contra algas y hongos</li>
+                    <li>Asesoría personalizada</li>
+                    <li>Servicio de emergencia 24/7</li>
+                    <li>Mantenimiento preventivo</li>
+                    <li>Garantía de satisfacción</li>
+                </ul>
+            </div>
+            <img src="img/mantencion-piscina.jpg" alt="Mantención de Piscinas">
+        </section>
+    </main>>
     <footer>
         <p>&copy; 2025 Web Page Project. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/?locale=es_LA"><img src="img\face.png" alt="Facebook"></a>
+            <a href="#"><img src="img/twi.png" alt="Twitter"></a>
+            <a href="#"><img src="img/ig.png" alt="Instagram"></a>
+            <a href="#"><img src="img/wsp.png" alt="wsp"></a>
+        </div>
+        <p>123 Business Street, City, Country</p>
     </footer>
     <a href="https://wa.me/XXXXXXXXXXX" class="whatsapp-button" target="_blank">
         <img src="img/wsp.png" alt="WhatsApp">
     </a>
+    <script src="menu.js"></script>
 </body>
 </html>
