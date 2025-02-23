@@ -45,6 +45,11 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+/* Añade esto al main */
+main {
+    padding-top: 80px; /* Asegura que el contenido no se superponga con el header */
+    flex: 1; /* Hace que el main ocupe el espacio restante */
+}
 
 .nav-container {
     display: flex;
