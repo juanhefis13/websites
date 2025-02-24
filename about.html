@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <header>
@@ -22,7 +23,8 @@
             <!-- Menú de navegación -->
             <nav class="menu">
                 <ul>
-                    <li><a href="about.html">Nosotros</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html" class="active">Nosotros</a></li>
                     <li><a href="services.html">Nuestros productos</a></li>
                     <li><a href="visitanos.html">Visítanos</a></li>
                     <li><a href="contact.html">Contacto</a></li>
@@ -35,12 +37,12 @@
         <section class="about-section">
             <div class="about-content">
                 <div class="about-info">
-                    <h2 class="about-title">Sobre Nosotros</h2>
-                    <p class="about-description">
+                    <h2 class="about-title animate__animated animate__fadeIn">Sobre Nosotros</h2>
+                    <p class="about-description animate__animated animate__fadeIn animate__delay-1s">
                         Somos una empresa comprometida con la calidad y la innovación. Nuestro equipo está dedicado a ofrecerte los mejores productos y servicios para satisfacer tus necesidades. Con años de experiencia en el mercado, nos esforzamos por superar tus expectativas en cada proyecto.
                     </p>
                 </div>
-                <div class="about-image-container">
+                <div class="about-image-container animate__animated animate__fadeIn animate__delay-2s">
                     <video autoplay loop muted class="about-image" id="rotating-video">
                         <source src="img/video1.mp4" type="video/mp4">
                         Tu navegador no soporta la etiqueta de video.
@@ -48,17 +50,89 @@
                 </div>
             </div>
         </section>
+
+        <section class="mission-vision-section">
+            <div class="mission-vision-content">
+                <div class="mission animate__animated animate__fadeInLeft">
+                    <h3>Misión</h3>
+                    <p>Nuestra misión es proporcionar productos de alta calidad que satisfagan las necesidades de nuestros clientes, superando sus expectativas en cada etapa del proceso.</p>
+                </div>
+                <div class="vision animate__animated animate__fadeInRight">
+                    <h3>Visión</h3>
+                    <p>Aspiramos a ser líderes en nuestro sector, reconocidos por nuestra innovación, calidad y compromiso con la excelencia.</p>
+                </div>
+                <div class="values animate__animated animate__fadeInUp">
+                    <h3>Valores</h3>
+                    <ul>
+                        <li>Calidad</li>
+                        <li>Innovación</li>
+                        <li>Compromiso</li>
+                        <li>Integridad</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <h2 class="process-title animate__animated animate__fadeIn">Nuestro Proceso</h2>
+            <div class="process-steps">
+                <div class="step animate__animated animate__fadeInLeft animate__delay-1s">
+                    <h3>1. Encargo del Producto</h3>
+                    <p>Los clientes nos contactan con sus necesidades y especificaciones.</p>
+                </div>
+                <div class="step animate__animated animate__fadeInLeft animate__delay-2s">
+                    <h3>2. Diseño</h3>
+                    <p>Nuestro equipo de diseño crea un concepto único y personalizado.</p>
+                </div>
+                <div class="step animate__animated animate__fadeInLeft animate__delay-3s">
+                    <h3>3. Fabricación</h3>
+                    <p>Fabricamos el producto con los más altos estándares de calidad.</p>
+                </div>
+                <div class="step animate__animated animate__fadeInLeft animate__delay-4s">
+                    <h3>4. Instalación</h3>
+                    <p>Entregamos e instalamos el producto en el lugar deseado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="dedication-section">
+            <h2 class="dedication-title animate__animated animate__fadeIn">Nuestra Dedicación</h2>
+            <p class="dedication-description animate__animated animate__fadeIn animate__delay-1s">
+                En cada paso del proceso, nuestro equipo se esfuerza por ofrecer la mejor experiencia posible. Desde el primer contacto hasta la instalación final, nos aseguramos de que cada detalle esté perfectamente cuidado.
+            </p>
+            <div class="dedication-video animate__animated animate__fadeIn animate__delay-2s">
+                <video autoplay loop muted>
+                    <source src="img/video2.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Web Page Project. All Rights Reserved.</p>
-        <div class="social-links">
-            <a href="https://www.facebook.com/?locale=es_LA"><img src="img\face.png" alt="Facebook"></a>
-            <a href="#"><img src="img/twi.png" alt="Twitter"></a>
-            <a href="#"><img src="img/ig.png" alt="Instagram"></a>
-            <a href="#"><img src="img/wsp.png" alt="wsp"></a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <p class="footer-title">Tinajas VIP</p>
+                <p>Hacemos posible tus productos.</p>
+            </div>
+            <div class="footer-section">
+                <p class="footer-title">Contacto</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Business Street, City, Country</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+            </div>
+            <div class="footer-section">
+                <p class="footer-title">Síguenos</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="img/face.png" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="img/twi.png" alt="Twitter"></a>
+                    <a href="#" target="_blank"><img src="img/ig.png" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img src="img/wsp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
         </div>
-        <p>123 Business Street, City, Country</p>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tinajas VIP. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
     <a href="https://wa.me/XXXXXXXXXXX" class="whatsapp-button" target="_blank">
