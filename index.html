@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Page Project</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
 </head>
 <body>
@@ -17,7 +19,7 @@
     
             <!-- Botón de hamburguesa (visible solo en móviles/tablets) -->
             <button class="menu-toggle" aria-label="Abrir menú">
-                ☰
+                <i class="fa-solid fa-bars"></i>
             </button>
     
             <!-- Menú de navegación -->
@@ -221,7 +223,7 @@
                     <li>📏 Medidas a solicitud</li>
                     <li>🎚 Selección de maderas</li>
                     <li>💵 Descuentos por volumen</li>
-                    <li>💵 Seleccione el color que dese</li>
+                    <li>🖌️ Seleccione el color que dese</li>
                 </ul>
                 
             </div>
@@ -240,6 +242,10 @@
 <footer>
     <div class="footer-content">
         <div class="footer-section">
+            <!-- Añade este div para la imagen animada -->
+            <div class="animated-logo">
+                <img src="img/icon128.png" alt="Tinajas VIP Logo" class="floating">
+            </div>
             <p class="footer-title">Tinajas VIP</p>
             <p>Hacemos posible tus productos.</p>
         </div>
@@ -265,8 +271,13 @@
     <a href="https://wa.me/XXXXXXXXXXX" class="whatsapp-button" target="_blank">
         <img src="img/wsp.png" alt="WhatsApp">
     </a>
+    <div class="image-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="expandedImg">
+    </div>
     <script src="carousel.js"></script>
 
     <script src="menu.js"></script>
+    
 </body>
 </html>
